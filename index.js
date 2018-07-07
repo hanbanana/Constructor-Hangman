@@ -3,7 +3,7 @@ var Word = require("./word");
 var Letter = require("./letter");
 var letterGuessedArray = [];
 var previouslyGuessed = [];
-var numberGuesses = 15;
+var numberGuesses = 10;
 
 var wordBank = ["carrot", "spinach", "lettuce", "pepper", "cucumber", "potato", "pea"];
 var randomIndex = Math.floor(Math.random() * wordBank.length);
@@ -18,8 +18,7 @@ var currentWord = new Word(letterGuessedArray);
 var queryUser = function() {
 	if (numberGuesses > 0) {
 		var wordDisplay = currentWord.show();
-
-		console.log("You have " + numberGuesses + " guesses remaining.");
+		console.log("You have " + numberGuesses + " guesses remaining. " + "The category is Vegetable!");
 		Inquirer.prompt([
 				{
 					name: "letter",
