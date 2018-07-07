@@ -5,7 +5,7 @@ var letterGuessedArray = [];
 var previouslyGuessed = [];
 var numberGuesses = 15;
 
-var wordBank = ["asparagus", "carrot", "spinach", "lettuce", "pepper", "cucumber", "artichoke", "potato", "arugula", "pea"];
+var wordBank = ["carrot", "spinach", "lettuce", "pepper", "cucumber", "potato", "pea"];
 var randomIndex = Math.floor(Math.random() * wordBank.length);
 var randomWord = wordBank[randomIndex];
 
